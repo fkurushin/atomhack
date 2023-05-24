@@ -1,0 +1,2 @@
+STANDART_DIR = 'data/8_27_202111_29_00PM'
+TEST_DIR = 'test_data'

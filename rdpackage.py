@@ -1,12 +1,30 @@
 import os
 import xml.etree.ElementTree as ET
+from functools import wraps
 from loguru import logger
 import json
+from definitions import STANDART_DIR, TEST_DIR
+
+logger.add("std.log", rotation="500 MB")
+logger.info("Session started...")
+
+
+def log_function(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        logger.info(f"Function {func.__name__} called with args={args}, kwargs={kwargs}")
+    return wrapper
 
 
 # лишние файлы не парные логгировать
-
-def parse_dir(path):
+@log_function
+def parse_dir(path: str) -> dict:
+    """
+    Функция рекурсивно парсит директорию path и преобразует
+    в словарь словарей
+    :param path:
+    :return:
+    """
     result = {}
     dir_items = os.listdir(path)
 
@@ -17,12 +35,18 @@ def parse_dir(path):
             result[item_name] = parse_dir(item_path)
         else:
             result[item_name] = None
-
     return result
 
+def content2extension(path:str)->str:
+    return path.split(".")[-1]
 
-def parse_xml(path):
-    logger.add("std.log", )
+@log_function
+def parse_xml(path: str) -> dict:
+    """
+    Функция парсит xml файл в словарь словарей
+    :param path:
+    :return:
+    """
     tree = ET.parse(path)
     root = tree.getroot()
 
@@ -44,10 +68,43 @@ def parse_xml(path):
     return result_dict
 
 
+@log_function
+def compare_dirs(dir1_path: str, dir2_path: str) -> bool:
+    """
+    Функция сравнивает две директории на соответствие структуре и содержанию пакету РД.
+    Сначала проверяется accdocs, потом docs, в  accdocs надо учесть названия
+    CheckList, IKL, Notes, PDTK, потом уже содержание этих директорий
+    :param dir1_path: путь к первой директории
+    :param dir2_path: путь ко второй директории
+    :return: True, если директории совпадают, и False - в противном случае
+    """
+    dir1_content = parse_dir(dir1_path)
+    dir2_content = parse_dir(dir2_path)
+
+    if len(dir1_content) != len(dir2_content):
+        logger.info(f"{dir1_content} contains {len(dir1_content)}, "
+                    f"but {dir2_content} contains {len(dir2_content)}")
+
+
+    # Сверяем наличие элементов и их содержание в двух директориях
+    for item_name in dir1_content:
+        if item_name not in dir2_content:
+
+        item1_content = dir1_content[item_name]
+        item2_content = dir2_content[item_name]
+
+        # Если элемент является директорией, рекурсивно вызываем функцию сравнения для него
+        if isinstance(item1_content, dict):
+            if not compare_dirs(os.path.join(dir1_path, item_name), os.path.join(dir2_path, item_name)):
+                logger.info()
+        # Если элемент является файлом, проверяем совпадение их содержимого
+        else:
+            if item1_content != item2_content:
+                logger.info()
+
+    return True
+
+
 if __name__ == "__main__":
-    dir_path = 'data/8_27_202111_29_00PM'
-    dir_dict = parse_dir(dir_path)
-    with open('directory.json', 'w') as fp:
-        json.dump(dir_dict, fp, indent=4)
-    print(dir_dict)
-    # print(parse_xml("data/8_27_202111_29_00PM/5 9 3 10/AccDocs/CheckList/20211011092922_4DDFC139-4341-4A65-A3CA-D0082D4797B8/4DDFC139-4341-4A65-A3CA-D0082D4797B8.xml"))
+
+   compare_dirs(STANDART_DIR, TEST_DIR)
