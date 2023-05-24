@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{5D7619CE-F5DC-4733-86E0-56D2AC30820B}" createTime="2023-02-01T12:45:58Z" modifyTime="2023-02-01T12:46:15Z" status="S_AccommDoc_Create" createUser="USER_731E93FB_97B0_471B_BF73_40EBD0C0A165" objectDef="O_ACOMM_DOC" modifyUser="USER_731E93FB_97B0_471B_BF73_40EBD0C0A165">
+  <attributes>
+    <attribute name="A_Creation_Date" datatype="date" value="2023-01-31T21:00:00Z" />
+    <attribute name="A_Name" datatype="string" value="Пояснительная записка" />
+    <attribute name="A_Designation" datatype="string" value="Пояснительная записка по пакету N 5 10 6 97" />
+    <attribute name="A_Docs_Tbl" datatype="table">
+      <rows>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_ExplanNote" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{099DA515-76C3-481D-BBE0-F2196084D94F}" />
+          <attribute name="A_Note" datatype="string" value="" isNull="true" />
+        </row>
+      </rows>
+    </attribute>
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Rus" />
+  </attributes>
+  <files>
+    <file id="RU_5_10_6_97.pdf" name="RU_5_10_6_97.pdf" primary="true" bodyId="ac89aa08-2b8b-4587-9227-af9c0103e456" modifiedTime="2023-01-24T08:25:30Z" createdTime="2023-01-24T08:17:52Z" fileDef="FILE_AA_PDF" hash="Sn+qNC4j1c2tTIw9OByBHQ==" size="138115" path="" />
+  </files>
+</object>

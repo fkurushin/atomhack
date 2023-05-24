@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{99EC8B07-AD17-4029-993D-B42A20F0C3B6}" createTime="2023-01-17T05:59:36Z" modifyTime="2023-03-01T20:29:00Z" status="S_Doc_Archived" createUser="USER_731E93FB_97B0_471B_BF73_40EBD0C0A165" objectDef="O_Doc" modifyUser="SYSADMIN">
+  <attributes>
+    <attribute name="A_Package_Number" datatype="string" value="5 10 6 97" />
+    <attribute name="A_Revision_Number" datatype="string" value="0" />
+    <attribute name="A_Inventory_Number" datatype="string" value="048828" />
+    <attribute name="A_Name" datatype="string" value="Антикоррозионная защита трубопроводов, опор, подвесок Ведомость пакета" />
+    <attribute name="A_Name_Eng" datatype="string" value="" isNull="true" />
+    <attribute name="A_Designation" datatype="string" value="R01.KK56.60UKC.0.AZO.WP.WD001" />
+    <attribute name="A_Dep" datatype="classifier" value="02_OAZITI" />
+    <attribute name="A_User" datatype="user" value="USER_731E93FB_97B0_471B_BF73_40EBD0C0A165" />
+    <attribute name="A_Doc_Language" datatype="classifier" value="" isNull="true" />
+  </attributes>
+  <files>
+    <file id="R01 KK56 60UKC 0 AZO WP WD001=r0.doc" name="R01 KK56 60UKC 0 AZO WP WD001=r0.doc" bodyId="e78193cb-046c-46a1-8677-af9500f4841b" modifiedTime="2023-01-16T12:37:52Z" createdTime="2023-01-11T06:22:40Z" fileDef="FILE_WORD" hash="+YNZwNsHGo9dXX0295s7ig==" size="74240" path="" />
+    <file id="_R01 KK56 60UKC 0 AZO WP WD001=r0.pdf" name="_R01 KK56 60UKC 0 AZO WP WD001=r0.pdf" bodyId="ae497e96-7e75-4275-afab-af960103b4c0" modifiedTime="2023-01-26T12:45:15Z" createdTime="2023-01-11T06:22:40Z" fileDef="FILE_PDF_PUBL" hash="MAS0W4UGKSZCXYOrvOwxSw==" size="224472" path="" />
+    <file id="48828_scan\R01 KK56 60UKC 0 AZO WP WD001=r0.pdf" name="R01 KK56 60UKC 0 AZO WP WD001=r0.pdf" primary="true" bodyId="f0ad4c18-1b64-488d-ab18-af9a00c50555" modifiedTime="2023-01-30T08:56:35Z" createdTime="2023-01-30T08:56:35Z" fileDef="FILE_PDF_ORIG" hash="LJ1UPhwUsAMDwNEo+fYwQw==" size="57580" path="48828_scan" />
+  </files>
+</object>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{6A5900E3-1B34-45DA-9736-436D951E5A08}" createTime="2023-01-10T11:12:22Z" modifyTime="2023-03-01T20:29:00Z" status="S_Doc_Archived" createUser="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35" objectDef="O_Doc" modifyUser="SYSADMIN">
+  <attributes>
+    <attribute name="A_Package_Number" datatype="string" value="5 10 6 115" />
+    <attribute name="A_Revision_Number" datatype="string" value="" isNull="true" />
+    <attribute name="A_Inventory_Number" datatype="string" value="048780" />
+    <attribute name="A_Name" datatype="string" value="50UJA. Реакторное здание. Антикоррозионная защита трубопроводов, опорб подвесок" />
+    <attribute name="A_Name_Eng" datatype="string" value="50UJA. Reactor building. Corrosion protection of pipelines, supports, tie bars" />
+    <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.OK.WD003" />
+    <attribute name="A_Dep" datatype="classifier" value="02_OAZITI" />
+    <attribute name="A_User" datatype="user" value="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35" />
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Ru_En" />
+  </attributes>
+  <files>
+    <file id="R01 KK56 50UJA 0 AZO OK WD003_002=0.dwg" name="R01 KK56 50UJA 0 AZO OK WD003_002=0.dwg" bodyId="1fdd426a-e274-45e8-8e22-af90010fb6f3" modifiedTime="2023-01-20T07:35:19Z" createdTime="2023-01-20T07:34:47Z" fileDef="FILE_DWG" hash="XBxZnPxBcbvJHI7AG/vPWw==" size="281950" path="" />
+    <file id="R01 KK56 50UJA 0 AZO OK WD003_003=0.dwg" name="R01 KK56 50UJA 0 AZO OK WD003_003=0.dwg" bodyId="3c6aaa80-eb7b-4cb3-a650-af90010fb722" modifiedTime="2023-01-20T13:29:07Z" createdTime="2023-01-20T07:34:47Z" fileDef="FILE_DWG" hash="+mXCf6XndrSSshxrNkVvyg==" size="206088" path="" />
+    <file id="_R01 KK56 50UJA 0 AZO OK WD003=0.pdf" name="_R01 KK56 50UJA 0 AZO OK WD003=0.pdf" bodyId="51db2784-ea8c-48dd-908e-af90010f75e9" modifiedTime="2023-01-20T13:27:55Z" createdTime="2023-01-20T07:31:11Z" fileDef="FILE_PDF_PUBL" hash="6EL/W7KSLaVS8N37FXgoMg==" size="2835470" path="" />
+    <file id="R01 KK56 50UJA 0 AZO OK WD003_001=0.dwg" name="R01 KK56 50UJA 0 AZO OK WD003_001=0.dwg" bodyId="3f91e64a-34f9-4aec-8da3-af90010fb6b9" modifiedTime="2023-01-20T07:35:06Z" createdTime="2023-01-20T07:34:47Z" fileDef="FILE_DWG" hash="Jubxa6XZyG2SHkmTctVBCw==" size="314949" path="" />
+    <file id="48780_scan\R01 KK56 50UJA 0 AZO OK WD003_002=0.pdf" name="R01 KK56 50UJA 0 AZO OK WD003_002=0.pdf" bodyId="3e97c288-d185-4e6f-9d4d-af95011d6d67" modifiedTime="2023-01-25T14:16:01Z" createdTime="2023-01-25T14:16:01Z" fileDef="FILE_PDF_ORIG" hash="26+W3Bkp4F4Z6IWLX3HJXw==" size="233075" path="48780_scan" />
+    <file id="48780_scan\R01 KK56 50UJA 0 AZO OK WD003_001=0.pdf" name="R01 KK56 50UJA 0 AZO OK WD003_001=0.pdf" primary="true" bodyId="acd7eb8a-18e0-4684-ac73-af95011d6d28" modifiedTime="2023-01-25T14:15:42Z" createdTime="2023-01-25T14:15:42Z" fileDef="FILE_PDF_ORIG" hash="BDnNMtwP4XRtMVDgBZp+Ng==" size="202848" path="48780_scan" />
+    <file id="48780_scan\R01 KK56 50UJA 0 AZO OK WD003_003=0.pdf" name="R01 KK56 50UJA 0 AZO OK WD003_003=0.pdf" bodyId="26a976a6-0a0a-427c-85f5-af95011d6da4" modifiedTime="2023-01-25T14:16:26Z" createdTime="2023-01-25T14:16:26Z" fileDef="FILE_PDF_ORIG" hash="BDyqk7Rh6ViYwJU2G6Sbzg==" size="93621" path="48780_scan" />
+  </files>
+</object>

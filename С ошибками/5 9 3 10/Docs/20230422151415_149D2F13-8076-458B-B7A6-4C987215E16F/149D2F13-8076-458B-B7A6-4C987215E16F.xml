@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{149D2F13-8076-458B-B7A6-4C987215E16F}" createTime="2023-01-10T11:14:23Z" modifyTime="2023-03-01T20:29:00Z" status="S_Doc_Archived" createUser="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35" objectDef="O_Doc" modifyUser="SYSADMIN">
+  <attributes>
+    <attribute name="A_Package_Number" datatype="string" value="5 10 6 115" />
+    <attribute name="A_Revision_Number" datatype="string" value="0" />
+    <attribute name="A_Inventory_Number" datatype="string" value="048833" />
+    <attribute name="A_Name" datatype="string" value="Антикоррозионная защита трубопроводов, опор, подвесок. Ведомость пакета." />
+    <attribute name="A_Name_Eng" datatype="string" value="Corrosion protection of pipelines, supports, tie bars. Packing list." />
+    <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.WP.WD003" />
+    <attribute name="A_Dep" datatype="classifier" value="02_OAZITI" />
+    <attribute name="A_User" datatype="user" value="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35" />
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Rus" />
+  </attributes>
+  <files>
+    <file id="R01 KK56 50UKC 0 AZO WP WD003=r0.doc" name="R01 KK56 50UKC 0 AZO WP WD003=r0.doc" bodyId="3f99c58d-d1cf-4311-8fc9-af9600a28d2a" modifiedTime="2023-01-26T06:30:00Z" createdTime="2023-01-12T12:54:57Z" fileDef="FILE_WORD" hash="EEyHHQkVEKqF5/Oghpdbwg==" size="76288" path="" />
+    <file id="_R01 KK56 50UKC 0 AZO WP WD003=r0.pdf" name="_R01 KK56 50UKC 0 AZO WP WD003=r0.pdf" bodyId="c8dfc700-0d01-4939-9f58-af9600a28a84" modifiedTime="2023-01-26T06:43:42Z" createdTime="2023-01-17T07:51:49Z" fileDef="FILE_PDF_PUBL" hash="ScbTonmuwswVBrwwDVeMAg==" size="235191" path="" />
+    <file id="48833_scan\R01 KK56 50UJA 0 AZO WP WD003=r0.pdf" name="R01 KK56 50UJA 0 AZO WP WD003=r0.pdf" primary="true" bodyId="5d2a8192-2449-4a6b-883a-af9a00cddd5f" modifiedTime="2023-01-30T09:29:02Z" createdTime="2023-01-30T09:29:02Z" fileDef="FILE_PDF_ORIG" hash="3u96FO/o7KCrtuG6W7zX3Q==" size="59020" path="48833_scan" />
+  </files>
+</object>

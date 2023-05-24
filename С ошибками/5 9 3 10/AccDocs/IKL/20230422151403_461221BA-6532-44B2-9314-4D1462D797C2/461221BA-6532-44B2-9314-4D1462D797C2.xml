@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{461221BA-6532-44B2-9314-4D1462D797C2}" createTime="2023-03-28T11:53:09Z" modifyTime="2023-03-28T11:53:11Z" status="S_AccommDoc_Create" createUser="USER_1289D3C0_D5B8_4C60_B56D_1D594A8247AE" objectDef="O_ACOMM_DOC" modifyUser="USER_1289D3C0_D5B8_4C60_B56D_1D594A8247AE">
+  <attributes>
+    <attribute name="A_Creation_Date" datatype="date" value="2023-02-08T21:00:00Z" />
+    <attribute name="A_Name" datatype="string" value="Сопроводительное письмо №02-01/8478-ИВК от  09.02.2023" />
+    <attribute name="A_Designation" datatype="string" value="02-01/8478-ИВК" />
+    <attribute name="A_Docs_Tbl" datatype="table">
+      <rows>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{21F50BA5-5353-4D61-9E43-6C0FE2A8FFB3}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{6070B19F-12F6-4104-B0EB-2969F5FAE065}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{B64CFF58-F085-4B87-A57B-E7E493EB4F8C}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{099DA515-76C3-481D-BBE0-F2196084D94F}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{28988911-300C-4C08-84FF-DBA1B2E57BA0}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{4C9060B2-E411-4BB3-9368-5CC2BB39FC46}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{B305331C-84C7-4C35-BAB5-6D7D80415661}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_Letter" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{3AB8FED0-EB0F-494B-82BC-06A6962681BD}" />
+          <attribute name="A_Note" datatype="string" value="Ревизия пакета 0" />
+        </row>
+      </rows>
+    </attribute>
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_En" />
+  </attributes>
+  <files>
+    <file id="8478-ИВК_E от 09.02.2023.pdf" name="8478-ИВК_E от 09.02.2023.pdf" primary="true" bodyId="f2a9c1b5-39dc-4950-b69f-afd300f55044" modifiedTime="2023-02-09T14:14:43Z" createdTime="2023-03-28T11:50:32Z" fileDef="FILE_AA_PDF" hash="oXmU2auzcvzPlHiZNQLprQ==" size="555166" path="" />
+  </files>
+</object>

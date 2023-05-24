@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{B64CFF58-F085-4B87-A57B-E7E493EB4F8C}" createTime="2019-09-05T07:21:42Z" modifyTime="2023-03-28T11:53:11Z" status="S_Active_Package" createUser="stv" objectDef="O_Package" modifyUser="USER_1289D3C0_D5B8_4C60_B56D_1D594A8247AE">
+  <attributes>
+    <attribute name="A_Block_Number" datatype="string" value="5" />
+    <attribute name="A_Building_Number" datatype="string" value="1-4" />
+    <attribute name="A_Package_Number" datatype="string" value="5 10 6 115" />
+    <attribute name="A_Revision_Number" datatype="string" value="" isNull="true" />
+    <attribute name="A_Building_Code" datatype="string" value="UJA" />
+    <attribute name="A_System_Code" datatype="string" value="BFK"/>
+    <attribute name="A_Name" datatype="string" value="Антикоррозионная защита трубопроводов, опор, подвесок" />
+    <attribute name="A_Name_Eng" datatype="string" value="Corrosion protection of pipelines, supports, tie bars" />
+    <attribute name="A_Dep" datatype="classifier" value="02_OAZITI" />
+    <attribute name="A_Table_PackageDocs" datatype="table">
+      <rows>
+        <row order="1">
+          <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.WP.WD003" />
+          <attribute name="A_Revision_Number" datatype="string" value="0" />
+          <attribute name="A_Name" datatype="string" value="Ведомость пакета. Антикоррозионная защита трубопроводов, опор, подвесок" />
+          <attribute name="A_Name_Eng" datatype="string" value="Packing list. Corrosion protection of pipelines, supports, tie bars" />
+          <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Rus" />
+          <attribute name="A_Doc_Ref" datatype="object" value="{149D2F13-8076-458B-B7A6-4C987215E16F}" />
+        </row>
+        <row order="2">
+          <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.OK.WD003" />
+          <attribute name="A_Revision_Number" datatype="string" value="0" />
+          <attribute name="A_Name" datatype="string" value="Антикоррозионная защита трубопроводов, опор, подвесок" />
+          <attribute name="A_Name_Eng" datatype="string" value="Corrosion protection of pipelines, supports, tie bars" />
+          <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Ru_En" />
+          <attribute name="A_Doc_Ref" datatype="object" value="{6A5900E3-1B34-45DA-9736-436D951E5A08}" />
+        </row>
+        <row order="3">
+          <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.OK.WD004" />
+          <attribute name="A_Revision_Number" datatype="string" value="0" />
+          <attribute name="A_Name" datatype="string" value="Антикоррозионная защита трубопроводов, опор, подвесок" />
+          <attribute name="A_Name_Eng" datatype="string" value="Corrosion protection of pipelines, supports, tie bars" />
+          <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Ru_En" />
+          <attribute name="A_Doc_Ref" datatype="object" value="{93947714-B33E-490F-8BAA-F47E11F25930}" />
+        </row>
+        <row order="1073741824">
+          <attribute name="A_Designation" datatype="string" value="R01.KK56.50UJA.0.AZO.WP.WD003" />
+          <attribute name="A_Revision_Number" datatype="string" value="0" />
+          <attribute name="A_Name" datatype="string" value="Ведомость пакета. Антикоррозионная защита трубопроводов, опор, подвесок" />
+          <attribute name="A_Name_Eng" datatype="string" value="Corrosion protection of pipelines, supports, tie bars. Packing list." />
+          <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_En" />
+          <attribute name="A_Doc_Ref" datatype="object" value="{A56E7322-A05A-4633-A311-4655D4AAEAEC}" />
+        </row>
+      </rows>
+    </attribute>
+    <attribute name="A_Desc_ObjPJ" datatype="string" value="KK56" />
+    <attribute name="A_dCount_InPack" datatype="int" value="4" />
+  </attributes>
+  <files />
+</object>

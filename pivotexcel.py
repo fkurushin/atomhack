@@ -80,4 +80,4 @@ def create_csv(path:str, csv_file:str):
 
 if __name__ == "__main__":
     # Пример использования функции
-    create_csv("data/8_27_202111_29_00PM/5 9 3 10/B3A356AD-6615-4842-9787-7369103404C0.xml")
+    create_csv("data/8_27_202111_29_00PM/5 9 3 10/B3A356AD-6615-4842-9787-7369103404C0.xml", "output.csv")

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{39E3C3AC-D64F-4C7E-942A-EAEEFA5B4271}" createTime="2023-02-06T10:08:16Z" modifyTime="2023-02-06T10:08:37Z" status="S_AccommDoc_Create" createUser="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35" objectDef="O_ACOMM_DOC" modifyUser="USER_E9FB1CF9_5474_4A19_A55E_FE3B4FCDDA35">
+  <attributes>
+    <attribute name="A_Creation_Date" datatype="date" value="2023-02-05T21:00:00Z" />
+    <attribute name="A_Name" datatype="string" value="5 10 6 115" />
+    <attribute name="A_Designation" datatype="string" value="5 10 6 115" />
+    <attribute name="A_Docs_Tbl" datatype="table">
+      <rows>
+        <row order="1073741824">
+          <attribute name="A_Type_Link" datatype="classifier" value="N_Type_Link_ExplanNote" />
+          <attribute name="A_Doc_Addition_Ref" datatype="object" value="{B64CFF58-F085-4B87-A57B-E7E493EB4F8C}" />
+          <attribute name="A_Note" datatype="string" value="" isNull="true" />
+        </row>
+      </rows>
+    </attribute>
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Rus" />
+  </attributes>
+  <files>
+    <file id="RU_5_10_6_115.pdf" name="RU_5_10_6_115.pdf" primary="true" bodyId="13e421f7-ccb8-4a51-b55c-afa100d89893" modifiedTime="2023-02-03T08:37:57Z" createdTime="2023-02-03T08:37:57Z" fileDef="FILE_AA_PDF" hash="igGvv72qmi62J42fcC+nNw==" size="74418" path="" />
+  </files>
+</object>

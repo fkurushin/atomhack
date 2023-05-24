@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<object id="{4A6FBB7D-1849-42CC-934F-2156426C5EF7}" createTime="2021-04-14T13:21:21Z" modifyTime="2021-07-13T20:55:51Z" status="S_Doc_Archived" createUser="USER1" objectDef="O_Doc" modifyUser="SYSADMIN">
+  <attributes>
+    <attribute name="A_Package_Number" datatype="string" value="5 9 3 10" />
+    <attribute name="A_Revision_Number" datatype="string" value="0" />
+    <attribute name="A_Inventory_Number" datatype="string" value="040928" />
+    <attribute name="A_Name" datatype="string" value="50UMA. Расстановка кабельных металлоконструкций" />
+    <attribute name="A_Name_Eng" datatype="string" value="50UMA. Cable metal structures" />
+    <attribute name="A_Designation" datatype="string" value="R23.KK56.50UMA.0.ET.OK.WD003" />
+    <attribute name="A_Dep" datatype="classifier" value="02_AP" />
+    <attribute name="A_User" datatype="user" value="USER1" />
+    <attribute name="A_Doc_Language" datatype="classifier" value="N_Doc_Language_Ru_En" />
+  </attributes>
+  <files>
+    <file id="R23 KK56 50UMA 0 ET OK WD003_001=0.dwg" name="R23 KK56 50UMA 0 ET OK WD003_009=0.dwg" bodyId="f49fabed-b529-4234-9695-ad4200e23079" modifiedTime="2021-06-02T11:59:27Z" createdTime="2021-06-02T11:47:57Z" fileDef="FILE_DWG" hash="AkAJoej88EQ3yrRB5dQljw==" size="137009" path="" />
+  </files>
+</object>

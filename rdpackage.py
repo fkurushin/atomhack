@@ -138,7 +138,10 @@ def get_files_list(directory_path):
     result = []
     for name, formats in files_dict.items():
         if len(formats) == 2:
-            result.append(formats)
+            if ".log" in formats[0]:
+                result.append(formats)
+            else:
+                result.append((formats[1], formats[0]))
         else:
             logger.info(f'Нет пары файлов с одинаковым именем в директории {formats}')
 
@@ -151,8 +154,12 @@ def move2(src_path, dest_path):
     dest_path - путь к целевой директории
     """
     if os.path.isfile(src_path):
-        os.makedirs(dest_path, exist_ok=True)
-        shutil.copy(src_path, dest_path)
+        os.makedirs(dest_path)
+        shutil.copy(src_path, dest_path, exist_ok=True)
+        logger.info(f"File {src_path} moved to {dest_path}")
+    elif os.path.isdir(src_path):
+        os.makedirs(dest_path)
+        shutil.copytree(src_path, dest_path, dirs_exist_ok=True)
         logger.info(f"File {src_path} moved to {dest_path}")
     else:
         logger.info(f"File {src_path} doesn't exist")
@@ -163,8 +170,8 @@ def move_files_by_attribute(directory_path:str):
     file_list = get_files_list(directory_path)
     create_directories(".", DIR)
     # Определяем метку для первого цикла
+    print(file_list)
     xml_loop_label = 'xml_loop'
-
     for xml, files in file_list:
         xml_path = directory_path + "/" + xml
         files_path = directory_path + "/" + files
@@ -174,7 +181,7 @@ def move_files_by_attribute(directory_path:str):
                 move2(xml_path,
                       list(DIR.keys())[0] + "/AccDocs/" + value+"/" + xml)
                 move2(files_path,
-                      list(DIR.keys())[0] + "/AccDocs/" + value + "/" + xml)
+                      list(DIR.keys())[0] + "/AccDocs/" + value + "/" + files)
                 # Переходим к следующей итерации первого цикла
                 continue
                 xml_loop_label
@@ -182,23 +189,23 @@ def move_files_by_attribute(directory_path:str):
         move2(xml_path,
               list(DIR.keys())[0] + "/Docs/" + xml)
         move2(files_path,
-              list(DIR.keys())[0] + "/AccDocs/" + value + "/" + xml)
+              list(DIR.keys())[0] + "/Docs/" + "/" + files)
 
 
 if __name__ == "__main__":
 
    # # 1) парсинг и сравнение директорий
-   # expected_structure = get_directory_structure(STANDART_DIR)
-   # actual_structure = get_directory_structure(TEST_DIR)
-   # compare_directories(expected_structure, actual_structure)
-   #
+   expected_structure = get_directory_structure(STANDART_DIR)
+   actual_structure = get_directory_structure("С ошибками/")
+   compare_directories(expected_structure, actual_structure)
+
    # # 2) Валидация xml файлов
    # validate_xml_files(TEST_DIR)
 
-   #  3) Структурирование
-   directory_path = "test_data_1"
-
-   move_files_by_attribute("test_data_1")
+   # #  3) Структурирование
+   # directory_path = "test_data_1"
+   #
+   # move_files_by_attribute("test_data_1")
 
    # print(get_files_list(directory_path))
    # to AccDocs
