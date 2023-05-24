@@ -16,6 +16,7 @@ from loguru import logger
 logger.add("std.log", rotation="500 MB")
 logger.info("Session started...")
 
+
 def check_filename(filename):
     """
     Требования из задания: «Файл Ведомости Пакета РД должен соответствовать следующим требованиям:
@@ -69,8 +70,14 @@ def find_doc_in_xml(path:str)->bool:
         return False
 
 
+def create_csv(path:str, csv_file:str):
+    if find_doc_in_xml(path):
+        xml_to_csv(path, csv_file)
+        logger.info(f"Succesfully wrote data from {path} to {csv_file}")
+    else:
+        logger.info("Pass")
+
+
 if __name__ == "__main__":
     # Пример использования функции
-    find_doc_in_xml("data/8_27_202111_29_00PM/5 9 3 10/B3A356AD-6615-4842-9787-7369103404C0.xml")
-    "data/8_27_202111_29_00PM/5 9 3 10/B3A356AD-6615-4842-9787-7369103404C0.xml"
-    xml_to_csv("data/8_27_202111_29_00PM/5 9 3 10/Docs/20211011092925_6C9F52FB-559E-4ECF-968A-1746947824BC/6C9F52FB-559E-4ECF-968A-1746947824BC.xml", "output.csv")
+    create_csv("data/8_27_202111_29_00PM/5 9 3 10/B3A356AD-6615-4842-9787-7369103404C0.xml")
